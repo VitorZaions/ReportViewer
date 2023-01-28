@@ -293,7 +293,6 @@ namespace Microsoft.Reporting.NETCore
 			Construct();
 		}
 
-		[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
 		internal LocalReport(SerializationInfo info, StreamingContext context)
 		{
 			base.DisplayName = info.GetString("DisplayName");
@@ -310,9 +309,6 @@ namespace Microsoft.Reporting.NETCore
 			Construct();
 		}
 
-		[SecurityCritical]
-		[SecurityTreatAsSafe]
-		[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
 		void ISerializable.GetObjectData(SerializationInfo info, StreamingContext context)
 		{
 			info.AddValue("DisplayName", base.DisplayName);
@@ -750,21 +746,6 @@ namespace Microsoft.Reporting.NETCore
 				lock (m_syncObject)
 				{
 					m_processingHost.AddFullTrustModuleInSandboxAppDomain(assemblyName);
-				}
-			}
-			catch (SecurityException processingException)
-			{
-				throw new LocalProcessingException(CommonStrings.LocalModeMissingFullTrustErrors, processingException);
-			}
-		}
-
-		public void SetBasePermissionsForSandboxAppDomain(PermissionSet permissions)
-		{
-			try
-			{
-				lock (m_syncObject)
-				{
-					m_processingHost.SetBasePermissionsForSandboxAppDomain(permissions);
 				}
 			}
 			catch (SecurityException processingException)

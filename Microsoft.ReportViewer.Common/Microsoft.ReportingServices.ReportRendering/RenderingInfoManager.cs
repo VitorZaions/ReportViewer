@@ -66,6 +66,17 @@ namespace Microsoft.ReportingServices.ReportRendering
 			}
 		}
 
+#if NET6_0_OR_GREATER
+		private RenderingInfoRoot Deserialize(Microsoft.ReportingServices.ReportProcessing.ReportProcessing.GetReportChunk getChunkCallback)
+		{
+			return null;
+		}
+
+		private void Serialize(RenderingInfoRoot renderingInfoRoot, Microsoft.ReportingServices.ReportProcessing.ReportProcessing.CreateReportChunk createChunkCallback)
+		{
+		}
+#else
+#pragma warning disable SYSLIB0011 // Type or member is obsolete
 		private RenderingInfoRoot Deserialize(Microsoft.ReportingServices.ReportProcessing.ReportProcessing.GetReportChunk getChunkCallback)
 		{
 			Stream stream = null;
@@ -112,5 +123,7 @@ namespace Microsoft.ReportingServices.ReportRendering
 				stream?.Close();
 			}
 		}
+#pragma warning restore SYSLIB0011 // Type or member is obsolete
+#endif
 	}
 }
