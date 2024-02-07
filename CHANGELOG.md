@@ -1,6 +1,15 @@
 # upcoming version
+ * Fixed bug causing errors when exporting report with invalid image placeholders
+ * Removed dependencies on BinaryFormatter in ResourceManager
+
+# 15.1.19
+ * Added .NET 8 version
+
+# 15.1.18
  * Added localized string for WinForms Report Viewer
  * Fixed hyperlink handling in WinForms Report Viewer
+ * Added .NET 7 version
+ * Removed BinaryFormatter dependencies for .NET 7+
 
 # 15.1.17
  * Fixed broken error messages in NETCore project due to missing string resources
