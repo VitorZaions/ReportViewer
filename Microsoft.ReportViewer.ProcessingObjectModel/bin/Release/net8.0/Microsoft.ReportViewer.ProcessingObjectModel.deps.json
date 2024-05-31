@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Microsoft.ReportViewer.ProcessingObjectModel/1.0.0": {
+        "runtime": {
+          "Microsoft.ReportViewer.ProcessingObjectModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.ReportViewer.ProcessingObjectModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
