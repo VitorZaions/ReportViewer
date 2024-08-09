@@ -1,4 +1,7 @@
-# upcoming version
+# 15.1.21
+ * Added assembly strong name
+
+# 15.1.20
  * Fixed bug causing errors when exporting report with invalid image placeholders
  * Removed dependencies on BinaryFormatter in ResourceManager
 
