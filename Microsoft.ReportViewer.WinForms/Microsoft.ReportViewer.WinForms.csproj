@@ -2,7 +2,7 @@
   <PropertyGroup>
     <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
     <UseWindowsForms>True</UseWindowsForms>
-    <TargetFrameworks>net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net5.0-windows7;net6.0-windows7;net7.0-windows7;net8.0-windows7</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>8.0</LangVersion>
@@ -11,10 +11,12 @@
     <PackageId>ReportViewerCore.WinForms</PackageId>
     <Authors>Microsoft, lkosson</Authors>
     <PackageProjectUrl>https://github.com/lkosson/reportviewercore</PackageProjectUrl>
-    <Version>15.1.19</Version>
+    <Version>15.1.21</Version>
     <Company>Microsoft</Company>
     <Product>ReportViewer Core</Product>
     <Description>SQL Server Reporting Services WinForms ReportViewer decompiled and recompiled for .NET Core. Based on ReportViewer 15.0.1404.0</Description>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ReportViewerCore.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Microsoft.Reporting.WinForms\Resources.16cal.gif" />
