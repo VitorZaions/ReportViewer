@@ -256,7 +256,10 @@
           "System.IO.Packaging": "4.7.0"
         },
         "runtime": {
-          "Microsoft.ReportViewer.Common.dll": {}
+          "Microsoft.ReportViewer.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "15.0.1404.0"
+          }
         },
         "resources": {
           "de/Microsoft.ReportViewer.Common.resources.dll": {
@@ -298,7 +301,10 @@
           "System.Windows.Extensions": "4.7.0"
         },
         "runtime": {
-          "Microsoft.ReportViewer.DataVisualization.dll": {}
+          "Microsoft.ReportViewer.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "15.0.1404.0"
+          }
         },
         "resources": {
           "SR/Microsoft.ReportViewer.DataVisualization.resources.dll": {
@@ -308,7 +314,10 @@
       },
       "Microsoft.ReportViewer.ProcessingObjectModel/1.0.0": {
         "runtime": {
-          "Microsoft.ReportViewer.ProcessingObjectModel.dll": {}
+          "Microsoft.ReportViewer.ProcessingObjectModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "15.0.1404.0"
+          }
         }
       }
     }
